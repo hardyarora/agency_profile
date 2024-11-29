@@ -119,6 +119,7 @@ export default function Pricing() {
                 </CardContent>
                 <CardFooter>
                   <Button
+                    onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                     className="w-full bg-primary/90 hover:bg-primary group relative overflow-hidden rounded-full transition-all duration-300"
                   >
                     <span className="flex items-center justify-center gap-2">

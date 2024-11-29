@@ -50,11 +50,17 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent" />
+      
+      <div className="container mx-auto px-4 relative">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
+              Get In Touch
+            </h2>
             <p className="text-muted-foreground">Ready to start your project? Contact us today.</p>
           </div>
 
@@ -102,7 +108,11 @@ export default function Contact() {
                 )}
               />
 
-              <Button type="submit" className="w-full" disabled={mutation.isPending}>
+              <Button 
+                type="submit" 
+                className="w-full bg-primary/90 hover:bg-primary transition-colors rounded-full" 
+                disabled={mutation.isPending}
+              >
                 {mutation.isPending ? "Sending..." : "Send Message"}
               </Button>
             </form>
