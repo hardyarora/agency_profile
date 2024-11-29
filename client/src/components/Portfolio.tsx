@@ -53,17 +53,17 @@ export default function Portfolio() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="overflow-hidden group cursor-pointer">
+              <Card className="overflow-hidden group cursor-pointer border-border/50 bg-gradient-to-br from-background/50 to-background/30 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-primary/50">
                 <CardContent className="p-0">
                   <div className="relative">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full aspect-video object-cover transition-transform group-hover:scale-105"
+                      className="w-full aspect-video object-cover transition-all duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
-                      <h3 className="text-white font-bold text-xl">{item.title}</h3>
-                      <p className="text-white/80">{item.description}</p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 p-6 flex flex-col justify-end backdrop-blur-sm">
+                      <h3 className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 text-white font-bold text-xl">{item.title}</h3>
+                      <p className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100 text-white/90">{item.description}</p>
                     </div>
                   </div>
                 </CardContent>
