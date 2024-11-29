@@ -17,13 +17,17 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            We Create Digital
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80"> Experiences</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#845ec2]">
+              Turn leads into revenue,
+              <br />
+              fast.
+            </span>
           </h1>
           <p className="text-xl mb-8 text-muted-foreground">
-            Transform your brand with cutting-edge web solutions that drive results
-            and engage your audience.
+            Unveil insights enhanced by AI from previously gathered user emails and domains.
+            <br />
+            Now also enriched with Twitter & Telegram.
           </p>
           <div className="flex gap-4">
             <Button 
@@ -33,14 +37,6 @@ export default function Hero() {
             >
               Get Started
             </Button>
-            {/* <Button 
-              size="lg" 
-              variant="outline" 
-              onClick={() => document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-primary/50 hover:bg-primary/10 rounded-full px-8"
-            >
-              View Our Work
-            </Button> */}
           </div>
         </motion.div>
       </div>
