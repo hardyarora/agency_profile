@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageSquare, Image, Users, Cable, LineChart, Settings } from "lucide-react";
+import { MessageSquare, Image, Layout, Zap, Bot, Database } from "lucide-react";
 
 const features = [
   {
@@ -13,24 +13,24 @@ const features = [
     icon: Image,
   },
   {
-    title: "Acquire New Customers",
-    description: "Attract new clientele through integrated lead generation and long-term loyalty programs.",
-    icon: Users,
+    title: "Customizable Design",
+    description: "Responsive, user-friendly designs that align with your brand identity.",
+    icon: Layout,
   },
   {
-    title: "Seamless Integrations",
-    description: "Easily connect your tools and preferred services to streamline data entry and enhance efficiency.",
-    icon: Cable,
+    title: "Performance-Driven",
+    description: "Optimized for user experience and retention",
+    icon: Zap,
   },
   {
-    title: "Real-time Analytics",
-    description: "Stay informed with instant status updates that allow you to make proactive decisions and optimize your business strategies on the go.",
-    icon: LineChart,
+    title: "AI-Powered Features",
+    description: "Chatbots, AI-driven recommendations to enhance user engagement.",
+    icon: Bot,
   },
   {
-    title: "Customizable Workflows",
-    description: "Adapt your task management process with flexible workflows that suit your team's unique needs, ensuring maximum productivity.",
-    icon: Settings,
+    title: "Scalable Architecture",
+    description: "Automated workflows, such as lead capturing and email follow-ups.",
+    icon: Database,
   },
 ];
 
