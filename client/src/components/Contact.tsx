@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -57,12 +58,17 @@ export default function Contact() {
       
       <div className="container mx-auto px-4 relative">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#845ec2]">
               Get In Touch
             </h2>
-            <p className="text-muted-foreground">Ready to start your project? Contact us today.</p>
-          </div>
+            <p className="text-xl text-muted-foreground">Ready to transform your vision into reality? Let's talk.</p>
+          </motion.div>
 
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -110,10 +116,13 @@ export default function Contact() {
 
               <Button 
                 type="submit" 
-                className="w-full bg-primary/90 hover:bg-primary transition-colors rounded-full" 
+                className="w-full bg-gradient-to-r from-[#ff7e5f] to-[#845ec2] hover:opacity-90 transition-all duration-300 rounded-full shadow-lg shadow-primary/20 hover:shadow-primary/40" 
                 disabled={mutation.isPending}
               >
-                {mutation.isPending ? "Sending..." : "Send Message"}
+                <span className="flex items-center justify-center gap-2">
+                  {mutation.isPending ? "Sending..." : "Send Message"}
+                  {!mutation.isPending && <motion.span animate={{ x: [0, 4, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>→</motion.span>}
+                </span>
               </Button>
             </form>
           </Form>
