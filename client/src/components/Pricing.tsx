@@ -64,7 +64,7 @@ export default function Pricing() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Ready to Ignite Your Idea?
+            Let's Turn Your Vision into Reality!
           </h2>
           <p className="text-xl text-muted-foreground">
             Choose the perfect package for your project and get started today
