@@ -33,14 +33,14 @@ export default function Hero() {
             >
               Get Started
             </Button>
-            <Button 
+            {/* <Button 
               size="lg" 
               variant="outline" 
               onClick={() => document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })}
               className="border-primary/50 hover:bg-primary/10 rounded-full px-8"
             >
               View Our Work
-            </Button>
+            </Button> */}
           </div>
         </motion.div>
       </div>
