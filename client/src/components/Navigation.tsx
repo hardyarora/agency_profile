@@ -20,7 +20,7 @@ export default function Navigation() {
           <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent blur-lg group-hover:blur-xl transition-all opacity-70 group-hover:opacity-100" />
           <span className="relative">
             <span className="text-primary">&lt;</span>
-            CodeCraft
+            codecraftdev
             <span className="text-primary">/&gt;</span>
           </span>
         </div>
