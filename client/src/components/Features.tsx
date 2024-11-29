@@ -88,10 +88,13 @@ export default function Features() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group p-6 rounded-xl border border-border/50 bg-background/50 backdrop-blur-sm hover:bg-background/80 transition-colors"
+              className="group p-6 rounded-xl border border-border/50 bg-gradient-to-br from-background/50 to-background/30 backdrop-blur-sm hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:border-primary/50"
             >
               <div className="mb-4">
-                <feature.icon className="w-10 h-10 text-primary/80 group-hover:text-primary transition-colors" />
+                <div className="relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <feature.icon className="w-10 h-10 text-primary/80 group-hover:text-primary transition-all relative" />
+                </div>
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-muted-foreground">{feature.description}</p>
