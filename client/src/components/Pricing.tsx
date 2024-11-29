@@ -96,11 +96,19 @@ export default function Pricing() {
                     <p className="text-sm text-muted-foreground">{plan.type}</p>
                     <h3 className="text-2xl font-bold">{plan.name}</h3>
                   </div>
-                  <div className="mt-4 flex items-baseline">
-                    <span className="text-4xl font-bold">${plan.price}</span>
-                    {plan.type === "per month" && (
-                      <span className="ml-1 text-muted-foreground">/month</span>
-                    )}
+                  <div className="mt-4 space-y-2">
+                    <Badge
+                      className="bg-gradient-to-r from-primary/30 to-primary/20 text-xs font-medium py-1 px-3"
+                      variant="secondary"
+                    >
+                      Introductory Price
+                    </Badge>
+                    <div className="flex items-baseline">
+                      <span className="text-4xl font-bold">${plan.price}</span>
+                      {plan.type === "per month" && (
+                        <span className="ml-1 text-muted-foreground">/month</span>
+                      )}
+                    </div>
                   </div>
                   {plan.type === "per month" && (
                     <p className="text-sm text-muted-foreground">
