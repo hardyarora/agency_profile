@@ -4,13 +4,13 @@ const team = [
   {
     name: "Hardy Arora",
     role: "Founder & Lead Developer",
-    image: "https://images.unsplash.com/photo-1576558656222-ba66febe3dec",
+    image: "/IMG_2364.jpeg",
     bio: [
       "With over 10 years of experience in software development and digital innovation, Hardy Arora has been at the forefront of transforming how businesses approach their digital presence. He did his masters at Northeastern university in computer science and has worked as lead engineer in a reputable company in USA.",
       "As the founder of our agency, Hardy brings his extensive expertise in full-stack development, cloud architecture, and AI integration to every project. His vision of creating user-centric, performance-driven applications has shaped our company's core philosophy and approach to digital solutions.",
-      "Its his promise to deliver exceptional digital experiences that drive business growth and customer satisfaction."
-    ]
-  }
+      "Its his promise to deliver exceptional digital experiences that drive business growth and customer satisfaction.",
+    ],
+  },
 ];
 
 export default function Team() {
@@ -19,7 +19,7 @@ export default function Team() {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
       <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent" />
-      
+
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0 }}
@@ -30,7 +30,9 @@ export default function Team() {
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
             Meet Our Founder
           </h2>
-          <p className="text-muted-foreground">The visionary behind our success</p>
+          <p className="text-muted-foreground">
+            The visionary behind our success
+          </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -58,7 +60,10 @@ export default function Team() {
                     </div>
                     <div className="space-y-4">
                       {member.bio.map((paragraph, i) => (
-                        <p key={i} className="text-muted-foreground leading-relaxed">
+                        <p
+                          key={i}
+                          className="text-muted-foreground leading-relaxed"
+                        >
                           {paragraph}
                         </p>
                       ))}
