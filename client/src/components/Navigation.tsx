@@ -17,7 +17,7 @@ export default function Navigation() {
       <div className="container flex h-20 items-center justify-between">
         <div className="font-bold text-2xl">
           <span className="text-primary">&lt;</span>
-          AgencyName
+          CodeCraft
           <span className="text-primary">/&gt;</span>
         </div>
         <NavigationMenu>
