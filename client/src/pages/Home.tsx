@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import Hero from "../components/Hero";
 import Portfolio from "../components/Portfolio";
+import { FEATURES } from "../config/features";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
 import Team from "../components/Team";
@@ -12,7 +13,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
-        <Portfolio />
+        {FEATURES.SHOW_PORTFOLIO && <Portfolio />}
         <Features />
         <Pricing />
         <Team />

@@ -5,6 +5,7 @@ import {
   NavigationMenuList,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
+import { FEATURES } from "../config/features";
 
 export default function Navigation() {
   const scrollToSection = (id: string) => {
@@ -22,14 +23,16 @@ export default function Navigation() {
         </div>
         <NavigationMenu>
           <NavigationMenuList className="hidden md:flex space-x-1">
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                className="cursor-pointer px-4 py-2 text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => scrollToSection("portfolio")}
-              >
-                Portfolio
-              </NavigationMenuLink>
-            </NavigationMenuItem>
+            {FEATURES.SHOW_PORTFOLIO && (
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  className="cursor-pointer px-4 py-2 text-sm font-medium transition-colors hover:text-primary"
+                  onClick={() => scrollToSection("portfolio")}
+                >
+                  Portfolio
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            )}
             <NavigationMenuItem>
               <NavigationMenuLink
                 className="cursor-pointer px-4 py-2 text-sm font-medium transition-colors hover:text-primary"

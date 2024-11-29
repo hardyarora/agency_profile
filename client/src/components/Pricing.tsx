@@ -11,32 +11,29 @@ import { Badge } from "@/components/ui/badge";
 
 const plans = [
   {
-    name: "MVP Development Package",
-    price: "2497",
+    name: "Launch Your Vision Package",
+    price: "1999",
     badge: "Most Popular",
     type: "One time",
     features: [
-      "Complete MVP development in 3-4 weeks",
-      "Web application/ Mobile App",
-      "Modern, scalable tech stack",
-      "Seamless integrations (payments, auth, etc.)",
-      "30 days of free maintenance",
-      "Personalized, founder-led development",
-      "Regular updates and transparent process"
+      "Fully functional MVP delivered in just 3–4 weeks",
+      "Custom-built web or mobile application tailored to your needs",
+      "Effortless integrations for payments, authentication, and more",
+      "Complimentary 30-day maintenance for a smooth launch",
+      "Clear, consistent updates with full transparency",
     ],
   },
   {
     name: "Growth Retainer Package",
-    price: "2997",
+    price: "2499",
     badge: "Monthly Retainer",
     type: "per month",
     features: [
-      "60 hours of development time per month",
-      "Flexible hours allocation",
-      "Weekly strategy calls",
-      "Priority feature development",
-      "Continuous maintenance & optimization",
-      "Same-day emergency support"
+      "60 Hours of Dedicated Development Per Month",
+      "Flexible Hour Allocation – Adjust your hours based on evolving priorities",
+      "Weekly Strategy Calls – Stay aligned with clear planning and collaboration",
+      "Priority Feature Development – Your top requests always come first",
+      "Continuous Maintenance & Optimization – Keep your platform running seamlessly",
     ],
   },
 ];
@@ -58,7 +55,7 @@ export default function Pricing() {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
       <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent" />
-      
+
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,7 +63,9 @@ export default function Pricing() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Ignite Your Idea?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Ready to Ignite Your Idea?
+          </h2>
           <p className="text-xl text-muted-foreground">
             Choose the perfect package for your project and get started today
           </p>
@@ -85,7 +84,10 @@ export default function Pricing() {
               <Card className="relative overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 border-border/50">
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 {plan.badge && (
-                  <Badge className="absolute top-4 right-4 bg-primary/90" variant="default">
+                  <Badge
+                    className="absolute top-4 right-4 bg-primary/90"
+                    variant="default"
+                  >
                     {plan.badge}
                   </Badge>
                 )}
@@ -101,10 +103,9 @@ export default function Pricing() {
                     )}
                   </div>
                   {plan.type === "per month" && (
-                    <p className="text-sm text-muted-foreground">No commitment, cancel anytime</p>
-                  )}
-                  {plan.type === "One time" && (
-                    <p className="text-sm text-red-500">Special rates for waitlist members.</p>
+                    <p className="text-sm text-muted-foreground">
+                      No commitment, cancel anytime
+                    </p>
                   )}
                 </CardHeader>
                 <CardContent>
@@ -119,7 +120,11 @@ export default function Pricing() {
                 </CardContent>
                 <CardFooter>
                   <Button
-                    onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                    onClick={() =>
+                      document
+                        .getElementById("contact")
+                        ?.scrollIntoView({ behavior: "smooth" })
+                    }
                     className="w-full bg-primary/90 hover:bg-primary group relative overflow-hidden rounded-full transition-all duration-300"
                   >
                     <span className="flex items-center justify-center gap-2">
