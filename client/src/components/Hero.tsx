@@ -19,15 +19,15 @@ export default function Hero() {
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#845ec2]">
-              Turn leads into revenue,
+              Your Dream Product,
               <br />
-              fast.
+              Now a Reality
             </span>
           </h1>
           <p className="text-xl mb-8 text-muted-foreground">
-            Unveil insights enhanced by AI from previously gathered user emails and domains.
+            From concept to launch, we transform your ideas into powerful,
             <br />
-            Now also enriched with Twitter & Telegram.
+            user-centric solutions quickly and efficiently.
           </p>
           <div className="flex gap-4">
             <Button 
