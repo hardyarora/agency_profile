@@ -69,11 +69,11 @@ export default function Features() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            Transform Your Task Process
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#845ec2]">
+            Transform Your Vision
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            This might involve personally identifying the user, suggesting tailored form suggestions, or recalling prior replies
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Innovative solutions tailored to your unique business needs
           </p>
         </motion.div>
 
@@ -88,7 +88,7 @@ export default function Features() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group p-6 rounded-xl border border-border/50 bg-gradient-to-br from-background/50 to-background/30 backdrop-blur-sm hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:border-primary/50"
+              className="group p-6 rounded-xl border border-border/50 bg-gradient-to-br from-black/40 to-black/20 backdrop-blur-sm hover:bg-black/50 transition-all duration-300 hover:scale-105 hover:border-[#ff7e5f]/50 hover:shadow-lg hover:shadow-[#845ec2]/10"
             >
               <div className="mb-4">
                 <div className="relative">
