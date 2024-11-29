@@ -17,9 +17,6 @@ const team = [
 export default function Team() {
   return (
     <section id="team" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent" />
       
       <div className="container mx-auto px-4 relative">
         <motion.div
@@ -50,7 +47,7 @@ export default function Team() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-full h-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-full object-cover rounded-full shadow-lg transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
                     <div className="flex-1 space-y-6">
