@@ -13,14 +13,18 @@ export default function Navigation() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
-      <div className="container flex h-16 items-center justify-between">
-        <div className="font-bold text-2xl text-primary">AgencyName</div>
+    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60 z-50 border-b border-border/40">
+      <div className="container flex h-20 items-center justify-between">
+        <div className="font-bold text-2xl">
+          <span className="text-primary">&lt;</span>
+          AgencyName
+          <span className="text-primary">/&gt;</span>
+        </div>
         <NavigationMenu>
-          <NavigationMenuList>
+          <NavigationMenuList className="hidden md:flex space-x-1">
             <NavigationMenuItem>
               <NavigationMenuLink
-                className="cursor-pointer px-4 py-2"
+                className="cursor-pointer px-4 py-2 text-sm font-medium transition-colors hover:text-primary"
                 onClick={() => scrollToSection("portfolio")}
               >
                 Portfolio
@@ -28,7 +32,7 @@ export default function Navigation() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className="cursor-pointer px-4 py-2"
+                className="cursor-pointer px-4 py-2 text-sm font-medium transition-colors hover:text-primary"
                 onClick={() => scrollToSection("pricing")}
               >
                 Pricing
@@ -36,7 +40,7 @@ export default function Navigation() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className="cursor-pointer px-4 py-2"
+                className="cursor-pointer px-4 py-2 text-sm font-medium transition-colors hover:text-primary"
                 onClick={() => scrollToSection("team")}
               >
                 Team
@@ -44,7 +48,12 @@ export default function Navigation() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <Button onClick={() => scrollToSection("contact")}>Contact Us</Button>
+        <Button 
+          onClick={() => scrollToSection("contact")}
+          className="bg-primary/90 hover:bg-primary transition-colors rounded-full px-6"
+        >
+          Contact Us
+        </Button>
       </div>
     </header>
   );
