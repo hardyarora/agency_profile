@@ -4,11 +4,11 @@ const team = [
   {
     name: "John Smith",
     role: "Founder & Lead Developer",
-    image: "https://images.unsplash.com/photo-1576558656222-ba66febe3dec",
+    image: "/IMG_2364.jpeg",
     bio: [
-      "With over 15 years of experience in software development and digital innovation, John Smith has been at the forefront of transforming how businesses approach their digital presence. His journey began in Silicon Valley, where he worked with industry giants to develop scalable solutions that serve millions of users worldwide.",
-      "As the founder of our agency, John brings his extensive expertise in full-stack development, cloud architecture, and AI integration to every project. His vision of creating user-centric, performance-driven applications has shaped our company's core philosophy and approach to digital solutions.",
-      "John is passionate about leveraging cutting-edge technologies while maintaining a focus on practical, business-driven results. His leadership has been instrumental in developing our innovative approach to project delivery, combining rapid development with enterprise-grade reliability."
+      "With over 10 years of experience in software development and digital innovation, Hardy Arora has been at the forefront of transforming how businesses approach their digital presence. He did his masters at Northeastern university in computer science and has worked as lead engineer in a reputable company in USA.",
+      "As the founder of our agency, Hardy brings his extensive expertise in full-stack development, cloud architecture, and AI integration to every project. His vision of creating user-centric, performance-driven applications has shaped our company's core philosophy and approach to digital solutions.",
+      "Its his promise to deliver exceptional digital experiences that drive business growth and customer satisfaction."
     ]
   }
 ];
