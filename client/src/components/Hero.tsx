@@ -10,12 +10,12 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-transparent" />
       </div>
       
-      <div className="container mx-auto px-4 pt-32">
+      <div className="container mx-auto px-4 md:px-8 pt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl"
+          className="max-w-5xl mx-auto text-center"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#845ec2]">
@@ -24,12 +24,11 @@ export default function Hero() {
               Now a Reality
             </span>
           </h1>
-          <p className="text-xl mb-8 text-muted-foreground">
+          <p className="text-xl mb-8 text-muted-foreground mx-auto max-w-2xl">
             From concept to launch, we transform your ideas into powerful,
-            <br />
             user-centric solutions quickly and efficiently.
           </p>
-          <div className="flex gap-4">
+          <div className="flex justify-center gap-4">
             <Button 
               size="lg" 
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}

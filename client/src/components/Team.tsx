@@ -4,7 +4,7 @@ const team = [
   {
     name: "Hardy Arora",
     role: "Founder & Lead Developer",
-    image: "/images/hardy_image.png",
+    image: "images/hardy_image.png",
     bio: [
       "With over 10 years of experience in software development and digital innovation, Hardy Arora has been at the forefront of transforming how businesses approach their digital presence. He did his masters at Northeastern university in computer science and has worked as lead engineer in a reputable company in USA.",
       "As the founder of our agency, Hardy brings his extensive expertise in full-stack development, cloud architecture, and AI integration to every project. His vision of creating user-centric, performance-driven applications has shaped our company's core philosophy and approach to digital solutions.",
