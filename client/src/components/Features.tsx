@@ -45,12 +45,25 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30, scale: 0.95 },
   visible: {
     opacity: 1,
     y: 0,
+    scale: 1,
     transition: {
-      duration: 0.5,
+      type: "spring",
+      stiffness: 100,
+      damping: 15,
+      duration: 0.8,
+    },
+  },
+  hover: {
+    scale: 1.05,
+    y: -5,
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 25,
     },
   },
 };
@@ -88,7 +101,8 @@ export default function Features() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group p-6 rounded-xl border border-border/50 bg-gradient-to-br from-black/40 to-black/20 backdrop-blur-sm hover:bg-black/50 transition-all duration-300 hover:scale-105 hover:border-[#ff7e5f]/50 hover:shadow-lg hover:shadow-[#845ec2]/10"
+              whileHover="hover"
+              className="group p-6 rounded-xl border border-border/50 bg-gradient-to-br from-black/40 to-black/20 backdrop-blur-sm hover:bg-black/50 transition-colors duration-300 hover:border-[#ff7e5f]/50 hover:shadow-lg hover:shadow-[#845ec2]/10"
             >
               <div className="mb-4">
                 <div className="relative">
